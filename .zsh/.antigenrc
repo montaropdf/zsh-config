@@ -1,0 +1,33 @@
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+    # Bundles from the default repo (robbyrussell's oh-my-zsh)
+    git
+    pass
+    dnf
+    systemd
+    colorize
+    command-not-found
+    emacs
+    git-extras
+    pipenv    
+
+    # Fish-like auto suggestions
+    zsh-users/zsh-autosuggestions
+
+    # Extra zsh completions
+    zsh-users/zsh-completions
+
+    # Extra alacritty completions
+    jwilm/alacritty.git extra/completions
+
+   # Syntax highlighting bundle.
+    zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+# Load the theme
+antigen theme ys
+
+# Tell antigen that you're done
+antigen apply
