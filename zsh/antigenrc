@@ -27,7 +27,8 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 
 # Load the theme
-antigen theme ys
+# antigen theme ys
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell antigen that you're done
 antigen apply

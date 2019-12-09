@@ -1,0 +1,25 @@
+#+TITLE: README
+
+* Installation
+  :PROPERTIES:
+  :ID:       70d0528c-5447-486f-8cca-420090c50d53
+  :END:
+
+  The ansible playbook [[https://github.com:montaropdf/reve-workshop.git/ansible/setup-host][setup-host]] handles the installation of
+  ZSH. Read its documentation for more details.
+
+** Dependenties
+   :PROPERTIES:
+   :ID:       460500d6-f19e-48b2-9294-4778a83fb55f
+   :END:
+   - zsh
+   - antigen
+** Deployment
+   :PROPERTIES:
+   :ID:       359cd511-211d-4dce-9095-4583e80551ba
+   :END:
+   - The file =zshrc= must be renamed to =.zshrc= and placed in the home directory.
+   - The directory =zsh= must be copied into the =$XDG_CONFIG_HOME= directory.
+
+   The ansible playbook [[https://github.com:montaropdf/reve-workshop.git/ansible/deploy-config][deploy-config]] handles the deployement of this
+   repository. Read its documentation for more details.
