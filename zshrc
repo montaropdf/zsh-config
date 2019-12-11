@@ -5,7 +5,7 @@
 # in that directory are sourced in alphanumeric order.
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
-source $HOME/codes/3rdparty/antigen/antigen.zsh
+source /usr/local/src/3rdparty/antigen/antigen.zsh
 
 antigen init $HOME/.config/zsh/antigenrc
 
