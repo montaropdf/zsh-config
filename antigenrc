@@ -1,3 +1,4 @@
+# -*- mode: sh -*-
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
 
@@ -28,7 +29,7 @@ EOBUNDLES
 
 # Load the theme
 # antigen theme ys
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 
 # Tell antigen that you're done
 antigen apply

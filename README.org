@@ -20,6 +20,7 @@
    :END:
    - The file =zshrc= must be renamed to =.zshrc= and placed in the home directory.
    - The directory =zsh= must be copied into the =$XDG_CONFIG_HOME= directory.
+   - Ensure the directory =~/.antigen= is not present.
 
    The ansible playbook [[https://github.com:montaropdf/reve-workshop.git/ansible/deploy-config][deploy-config]] handles the deployement of this
    repository. Read its documentation for more details.
