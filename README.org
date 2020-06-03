@@ -4,10 +4,9 @@
   :PROPERTIES:
   :ID:       70d0528c-5447-486f-8cca-420090c50d53
   :END:
-
-  The ansible playbook [[https://github.com:montaropdf/reve-workshop.git/ansible/setup-host][setup-host]] handles the installation of
-  ZSH. Read its documentation for more details.
-
+  The ansible playbook [[https://github.com/REve-Workshop/xyz.revecloud.re.ansible.reve-setup][reve-setup/playbooks/host-setup]] handles the
+  installation of ZSH and its dependencies. Read its documentation for
+  more details.
 ** Dependenties
    :PROPERTIES:
    :ID:       460500d6-f19e-48b2-9294-4778a83fb55f
@@ -18,9 +17,21 @@
    :PROPERTIES:
    :ID:       359cd511-211d-4dce-9095-4583e80551ba
    :END:
-   - The file =zshrc= must be renamed to =.zshrc= and placed in the home directory.
-   - The directory =zsh= must be copied into the =$XDG_CONFIG_HOME= directory.
-   - Ensure the directory =~/.antigen= is not present.
+   - The file =zshrc= must be renamed to =.zshrc= and placed in the
+     home directory.
+   - The file =p10k.zsh= must be renamed to =.p10k.zsh= and placed in
+     the home directory.
+   - The directory =zsh/= must be copied into the =$XDG_CONFIG_HOME=
+     directory.
+   - Ensure the directory =~/.antigen= is not present. The antigen
+     configuration is located in =zsh/=
 
-   The ansible playbook [[https://github.com:montaropdf/reve-workshop.git/ansible/deploy-config][deploy-config]] handles the deployement of this
+   Once everything has been deployed, run the following command to
+   install all the dependencies defined in the antigen configuration
+   file.
+   #+begin_src shell
+     source ~/.zshrc
+   #+end_src
+
+   The ansible playbook [[https://github.com/REve-Workshop/xyz.revecloud.re.ansible.update-user][update-user]] handles the deployment of this
    repository. Read its documentation for more details.
