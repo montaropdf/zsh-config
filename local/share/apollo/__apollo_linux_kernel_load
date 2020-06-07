@@ -1,0 +1,16 @@
+#! /bin/zsh
+# -*- mode: sh -*-
+
+__apollo_linux_kernel_cache_key() {
+    __APOLLO_RETURN_MESSAGE="DISTRO_KERNEL"
+}
+
+__apollo_linux_kernel_run() {
+
+    kernel_version=$(</proc/version)
+    kernel_version_full=$kernel_version[(w)3]
+    kernel_version_short=$kernel_version_full[(ws:.:)1,(ws:.:)3]
+    kernel_arch=$kernel_version_full[(ws:.:)5]
+
+    __APOLLO_RETURN_MESSAGE="K: $kernel_version_short  $kernel_arch"
+}
