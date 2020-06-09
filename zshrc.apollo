@@ -109,6 +109,4 @@ zinit light zsh-users/zsh-completions
 zinit ice lucid atinit'fpath+=($PWD/functions.zwc $PWD/functions ${XDG_DATA_HOME:-${HOME}/.local/share}/apollo $PWD/modules.zwc $PWD/modules)'
 zinit light mjrafferty/apollo-zsh-theme
 
-APOLLO_THEME=revecloud
-zstyle ':apollo:revecloud*:core:modules:left' modules 'newline' 'root_indicator' 'context' 'dir' 'ruler'
-zstyle ':apollo:revecloud*:core:modules:right' modules 'background_jobs' 'command_execution_time' 'newline' 'linux_distro' 'linux_kernel' 'newline' 'status'
+APOLLO_THEME=revecloud-dev
