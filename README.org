@@ -1,5 +1,10 @@
 #+TITLE: README
 
+*WARNING*: The ZSH configuration has been moved to https://github.com/montaropdf/dotfiles.git.
+
+The repository will not be update anymore.
+
+
 * Installation
   :PROPERTIES:
   :ID:       70d0528c-5447-486f-8cca-420090c50d53
